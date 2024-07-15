@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let nome = prompt("digite seu nome")
+let massa = prompt("digite sua massa em quilos")
+let altura = prompt("digite sua altura em centímetros") 
+let altura2 = altura/100
+let imc = massa/(altura2*altura2)
+let tipoimc
+if(imc<=16){tipoimc = "baixo peso muito grave"}
+else if(imc<=17){tipoimc = "baixo peso grave"}
+else if(imc<=18.5){tipoimc = "baixo peso"}
+else if(imc<=25){tipoimc = "peso normal"}
+else if(imc<=30){tipoimc = "sobrepeso"}
+else if(imc<=35){tipoimc = "obesidade de grau I"}
+else if(imc<=40){tipoimc = "obesidade de grau II"}
+else if(imc=>40){tipoimc = "obesidade de grau III"}
+console.log(nome+", você tem imc de "+imc+" e tem "+tipoimc)
+    </script>
+</body>
+</html>
